@@ -2,10 +2,10 @@ import React from 'react';
 
 //sfc //stateless function component
 
-const Form = () => {
+const Form = (props) => {
     return(
         <form>
-            <input type = "text" />
+            <input type = "text" value={props.value} onChange={props.change} placeholder="Wpisz miasto"/>
             <button>Wyszukaj miasta</button>
         </form>
     )
